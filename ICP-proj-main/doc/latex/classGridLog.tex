@@ -1,0 +1,134 @@
+\hypertarget{classGridLog}{}\doxysection{Grid\+Log Class Reference}
+\label{classGridLog}\index{GridLog@{GridLog}}
+
+
+Represents the game board log in a Pac-\/\+Man game.  
+
+
+
+
+{\ttfamily \#include $<$grid\+Log.\+h$>$}
+
+
+
+Inheritance diagram for Grid\+Log\+:
+% FIG 0
+
+
+Collaboration diagram for Grid\+Log\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGridLog_a0499e5a8f0fd7ca3c6b80164b6fd2160}\label{classGridLog_a0499e5a8f0fd7ca3c6b80164b6fd2160}} 
+{\bfseries Grid\+Log} (Maze $\ast$maze, QGraphics\+Item $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{classGridLog_a609b7d4de0ea184f8b93f0c1dba74fc0}\label{classGridLog_a609b7d4de0ea184f8b93f0c1dba74fc0}} 
+QRectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{classGridLog_af26f5e7a3da6b6a7a06158872cb8db27}\label{classGridLog_af26f5e7a3da6b6a7a06158872cb8db27}} 
+void {\bfseries paint} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+\mbox{\hyperlink{classGridLog_a0499e5a8f0fd7ca3c6b80164b6fd2160}{Grid\+Log}} (Maze $\ast$maze, QGraphics\+Item $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classGridLog}{Grid\+Log}} object with the given parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGridLog_a609b7d4de0ea184f8b93f0c1dba74fc0}\label{classGridLog_a609b7d4de0ea184f8b93f0c1dba74fc0}} 
+QRectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{classGridLog_af26f5e7a3da6b6a7a06158872cb8db27}\label{classGridLog_af26f5e7a3da6b6a7a06158872cb8db27}} 
+void {\bfseries paint} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+int \mbox{\hyperlink{classGridLog_a14ebd215f0a8159f3d8892e4420a2945}{read\+Maze}} ()
+\begin{DoxyCompactList}\small\item\em Reads the maze from the log file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Maze $\ast$ \mbox{\hyperlink{classGridLog_a86b029055ea03b93cfe098a554e9180d}{maze\+Grid}}
+\item 
+int \mbox{\hyperlink{classGridLog_a4f518631ae0b8d9e5b392c92ecf2ebb3}{rows}}
+\item 
+int \mbox{\hyperlink{classGridLog_a206a65d69b014a562b892e4be830c20a}{cols}}
+\item 
+int \mbox{\hyperlink{classGridLog_afc5b0403a81991760be3e1972a6d732f}{logfiles\+Count}}
+\item 
+std\+::ifstream \mbox{\hyperlink{classGridLog_a0849a2de9335c7090ff5850543dac0cc}{file}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the game board log in a Pac-\/\+Man game. 
+
+The \mbox{\hyperlink{classGridLog}{Grid\+Log}} class is a QGraphics\+Item that represents the game board log in a Pac-\/\+Man game. It is responsible for reading the log files and drawing the log messages on the screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGridLog_a0499e5a8f0fd7ca3c6b80164b6fd2160}\label{classGridLog_a0499e5a8f0fd7ca3c6b80164b6fd2160}} 
+\index{GridLog@{GridLog}!GridLog@{GridLog}}
+\index{GridLog@{GridLog}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{GridLog()}{GridLog()}}
+{\footnotesize\ttfamily Grid\+Log\+::\+Grid\+Log (\begin{DoxyParamCaption}\item[{Maze $\ast$}]{maze,  }\item[{QGraphics\+Item $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classGridLog}{Grid\+Log}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maze} & A pointer to the Maze object that represents the game board. \\
+\hline
+{\em parent} & An optional parent QGraphics\+Item. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGridLog_a14ebd215f0a8159f3d8892e4420a2945}\label{classGridLog_a14ebd215f0a8159f3d8892e4420a2945}} 
+\index{GridLog@{GridLog}!readMaze@{readMaze}}
+\index{readMaze@{readMaze}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{readMaze()}{readMaze()}}
+{\footnotesize\ttfamily int Grid\+Log\+::read\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads the maze from the log file. 
+
+\begin{DoxyReturn}{Returns}
+Succes or not. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGridLog_a206a65d69b014a562b892e4be830c20a}\label{classGridLog_a206a65d69b014a562b892e4be830c20a}} 
+\index{GridLog@{GridLog}!cols@{cols}}
+\index{cols@{cols}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int Grid\+Log\+::cols}
+
+The number of columns in the game board. \mbox{\Hypertarget{classGridLog_a0849a2de9335c7090ff5850543dac0cc}\label{classGridLog_a0849a2de9335c7090ff5850543dac0cc}} 
+\index{GridLog@{GridLog}!file@{file}}
+\index{file@{file}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily std\+::ifstream Grid\+Log\+::file}
+
+An input file stream used for reading the log files. \mbox{\Hypertarget{classGridLog_afc5b0403a81991760be3e1972a6d732f}\label{classGridLog_afc5b0403a81991760be3e1972a6d732f}} 
+\index{GridLog@{GridLog}!logfilesCount@{logfilesCount}}
+\index{logfilesCount@{logfilesCount}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{logfilesCount}{logfilesCount}}
+{\footnotesize\ttfamily int Grid\+Log\+::logfiles\+Count}
+
+The number of log files to read. \mbox{\Hypertarget{classGridLog_a86b029055ea03b93cfe098a554e9180d}\label{classGridLog_a86b029055ea03b93cfe098a554e9180d}} 
+\index{GridLog@{GridLog}!mazeGrid@{mazeGrid}}
+\index{mazeGrid@{mazeGrid}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{mazeGrid}{mazeGrid}}
+{\footnotesize\ttfamily Maze $\ast$ Grid\+Log\+::maze\+Grid}
+
+A pointer to the Maze object that represents the game board. \mbox{\Hypertarget{classGridLog_a4f518631ae0b8d9e5b392c92ecf2ebb3}\label{classGridLog_a4f518631ae0b8d9e5b392c92ecf2ebb3}} 
+\index{GridLog@{GridLog}!rows@{rows}}
+\index{rows@{rows}!GridLog@{GridLog}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int Grid\+Log\+::rows}
+
+The number of rows in the game board. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{GridLog_8h}{Grid\+Log.\+h}}\item 
+grid\+Log.\+cpp\end{DoxyCompactItemize}

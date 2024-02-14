@@ -1,0 +1,147 @@
+\hypertarget{classLog}{}\doxysection{Log Class Reference}
+\label{classLog}\index{Log@{Log}}
+
+
+The \mbox{\hyperlink{classLog}{Log}} class is responsible for creating log files for a \mbox{\hyperlink{classPacman}{Pacman}} game.  
+
+
+
+
+{\ttfamily \#include $<$Log.\+h$>$}
+
+
+
+Inheritance diagram for Log\+:
+% FIG 0
+
+
+Collaboration diagram for Log\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLog_a51e96dcca4ae3ee6fadb76e8fd820f9f}\label{classLog_a51e96dcca4ae3ee6fadb76e8fd820f9f}} 
+void \mbox{\hyperlink{classLog_a51e96dcca4ae3ee6fadb76e8fd820f9f}{create\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Creates a log file for the current iteration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLog_a4b08f8f33b3c03baa7473d400ad6695c}\label{classLog_a4b08f8f33b3c03baa7473d400ad6695c}} 
+void \mbox{\hyperlink{classLog_a4b08f8f33b3c03baa7473d400ad6695c}{clear\+Log\+Folder}} ()
+\begin{DoxyCompactList}\small\item\em Clears the log folder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLog_aa0b906aaaf787388d928d703d946b471}{read\+Source\+Log}} (int iteration)
+\begin{DoxyCompactList}\small\item\em Reads a source log for a specified iteration. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLog_ac4cdd144fb0ca3e449511d98be95adca}{count\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Counts the number of logs in the log folder. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLog_af1b710b6d06b1581a25a2a727e88c7a0}{Log}} (Maze $\ast$maze, int rows, int cols, QTimer $\ast$timer)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{classLog}{Log}} object with the specified maze, number of rows, and number of columns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLog_a7599852851898c94c4453a9de6d2c6c5}{log\+Iteration}} = 1
+\item 
+\mbox{\Hypertarget{classLog_a2ee6c0d4285375d19b3e1e21588f6bc8}\label{classLog_a2ee6c0d4285375d19b3e1e21588f6bc8}} 
+int {\bfseries reading\+Log\+From\+Start} = 1
+\item 
+QTimer \mbox{\hyperlink{classLog_a5c0383f2e0bf08419803e9a8bf6df8af}{timeline}}
+\begin{DoxyCompactList}\small\item\em A timer for creating log files. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLog_a20a73ab8b729d2c16e7170f4c2ac8a32}\label{classLog_a20a73ab8b729d2c16e7170f4c2ac8a32}} 
+Maze $\ast$ \mbox{\hyperlink{classLog_a20a73ab8b729d2c16e7170f4c2ac8a32}{m\+\_\+maze}}
+\begin{DoxyCompactList}\small\item\em The maze to log. \end{DoxyCompactList}\item 
+Maze $\ast$ \mbox{\hyperlink{classLog_a91aacb5d93b9dfe9a53f71c4aa4a3c2f}{maze\+Log}}
+\item 
+\mbox{\Hypertarget{classLog_a9c678474c626c5cbb802c667aef86bcb}\label{classLog_a9c678474c626c5cbb802c667aef86bcb}} 
+int \mbox{\hyperlink{classLog_a9c678474c626c5cbb802c667aef86bcb}{m\+\_\+rows}}
+\begin{DoxyCompactList}\small\item\em The number of rows in the maze. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classLog_a4e9f0819af0eba9911a51ae6e915b0bb}\label{classLog_a4e9f0819af0eba9911a51ae6e915b0bb}} 
+int \mbox{\hyperlink{classLog_a4e9f0819af0eba9911a51ae6e915b0bb}{m\+\_\+cols}}
+\begin{DoxyCompactList}\small\item\em The number of columns in the maze. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classLog}{Log}} class is responsible for creating log files for a \mbox{\hyperlink{classPacman}{Pacman}} game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLog_af1b710b6d06b1581a25a2a727e88c7a0}\label{classLog_af1b710b6d06b1581a25a2a727e88c7a0}} 
+\index{Log@{Log}!Log@{Log}}
+\index{Log@{Log}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily Log\+::\+Log (\begin{DoxyParamCaption}\item[{Maze $\ast$}]{maze,  }\item[{int}]{rows,  }\item[{int}]{cols,  }\item[{QTimer $\ast$}]{timer }\end{DoxyParamCaption})}
+
+
+
+Creates a new \mbox{\hyperlink{classLog}{Log}} object with the specified maze, number of rows, and number of columns. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maze} & the maze to log \\
+\hline
+{\em rows} & the number of rows in the maze \\
+\hline
+{\em cols} & the number of columns in the maze \\
+\hline
+{\em timer} & the timer to control the creation of log files \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLog_ac4cdd144fb0ca3e449511d98be95adca}\label{classLog_ac4cdd144fb0ca3e449511d98be95adca}} 
+\index{Log@{Log}!countLogs@{countLogs}}
+\index{countLogs@{countLogs}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{countLogs()}{countLogs()}}
+{\footnotesize\ttfamily int Log\+::count\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Counts the number of logs in the log folder. 
+
+\begin{DoxyReturn}{Returns}
+the number of logs in the log folder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLog_aa0b906aaaf787388d928d703d946b471}\label{classLog_aa0b906aaaf787388d928d703d946b471}} 
+\index{Log@{Log}!readSourceLog@{readSourceLog}}
+\index{readSourceLog@{readSourceLog}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{readSourceLog()}{readSourceLog()}}
+{\footnotesize\ttfamily void Log\+::read\+Source\+Log (\begin{DoxyParamCaption}\item[{int}]{iteration }\end{DoxyParamCaption})}
+
+
+
+Reads a source log for a specified iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iteration} & the iteration number of the log to read \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLog_a7599852851898c94c4453a9de6d2c6c5}\label{classLog_a7599852851898c94c4453a9de6d2c6c5}} 
+\index{Log@{Log}!logIteration@{logIteration}}
+\index{logIteration@{logIteration}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{logIteration}{logIteration}}
+{\footnotesize\ttfamily int Log\+::log\+Iteration = 1}
+
+The current log iteration. \mbox{\Hypertarget{classLog_a91aacb5d93b9dfe9a53f71c4aa4a3c2f}\label{classLog_a91aacb5d93b9dfe9a53f71c4aa4a3c2f}} 
+\index{Log@{Log}!mazeLog@{mazeLog}}
+\index{mazeLog@{mazeLog}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{mazeLog}{mazeLog}}
+{\footnotesize\ttfamily Maze$\ast$ Log\+::maze\+Log}
+
+The maze object to log. \mbox{\Hypertarget{classLog_a5c0383f2e0bf08419803e9a8bf6df8af}\label{classLog_a5c0383f2e0bf08419803e9a8bf6df8af}} 
+\index{Log@{Log}!timeline@{timeline}}
+\index{timeline@{timeline}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{timeline}{timeline}}
+{\footnotesize\ttfamily QTimer Log\+::timeline}
+
+
+
+A timer for creating log files. 
+
+Used for iterating, when the logs play from the beginning 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Log_8h}{Log.\+h}}\item 
+Log.\+cpp\end{DoxyCompactItemize}

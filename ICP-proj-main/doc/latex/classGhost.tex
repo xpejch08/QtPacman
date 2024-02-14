@@ -1,0 +1,79 @@
+\hypertarget{classGhost}{}\doxysection{Ghost Class Reference}
+\label{classGhost}\index{Ghost@{Ghost}}
+
+
+Represents the view of a ghost character in a Pac-\/\+Man game.  
+
+
+
+
+{\ttfamily \#include $<$ghost.\+h$>$}
+
+
+
+Inheritance diagram for Ghost\+:
+% FIG 0
+
+
+Collaboration diagram for Ghost\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGhost_a231a741f4efcc40f47bddb7efa61a19d}{move}} ()
+\begin{DoxyCompactList}\small\item\em Moves the ghost one step in its current direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGhost_a6cc934c58c98c762c94788046db94cf2}{Ghost}} (Maze\+Object $\ast$maze\+Object, Maze $\ast$maze, QTimer $\ast$main\+Timer, int ghost\+Order, QObject $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classGhost}{Ghost}} object with the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the view of a ghost character in a Pac-\/\+Man game. 
+
+The \mbox{\hyperlink{classGhost}{Ghost}} class is a subclass of QObject and QGraphics\+Pixmap\+Item, and represents a ghost character in a Pac-\/\+Man game. It is responsible for moving around the game board and avoiding collisions with the player character and other ghosts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGhost_a6cc934c58c98c762c94788046db94cf2}\label{classGhost_a6cc934c58c98c762c94788046db94cf2}} 
+\index{Ghost@{Ghost}!Ghost@{Ghost}}
+\index{Ghost@{Ghost}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{Ghost()}{Ghost()}}
+{\footnotesize\ttfamily Ghost\+::\+Ghost (\begin{DoxyParamCaption}\item[{Maze\+Object $\ast$}]{maze\+Object,  }\item[{Maze $\ast$}]{maze,  }\item[{QTimer $\ast$}]{main\+Timer,  }\item[{int}]{ghost\+Order,  }\item[{QObject $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classGhost}{Ghost}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maze\+Object} & A pointer to the Maze\+Object that contains the ghost\textquotesingle{}s starting position. \\
+\hline
+{\em maze} & A pointer to the Maze object that represents the game board. \\
+\hline
+{\em main\+Timer} & A QTimer object that controls the main game loop. \\
+\hline
+{\em ghost\+Order} & An integer that represents the ghost\textquotesingle{}s order. There are ghosts. \\
+\hline
+{\em parent} & An optional parent QObject. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGhost_a231a741f4efcc40f47bddb7efa61a19d}\label{classGhost_a231a741f4efcc40f47bddb7efa61a19d}} 
+\index{Ghost@{Ghost}!move@{move}}
+\index{move@{move}!Ghost@{Ghost}}
+\doxysubsubsection{\texorpdfstring{move}{move}}
+{\footnotesize\ttfamily void Ghost\+::move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Moves the ghost one step in its current direction. 
+
+This slot function is called by the main game loop to move the ghost one step in its current direction. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ghost.\+h\item 
+ghost.\+cpp\end{DoxyCompactItemize}

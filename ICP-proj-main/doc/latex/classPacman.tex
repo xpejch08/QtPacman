@@ -1,0 +1,131 @@
+\hypertarget{classPacman}{}\doxysection{Pacman Class Reference}
+\label{classPacman}\index{Pacman@{Pacman}}
+
+
+The \mbox{\hyperlink{classPacman}{Pacman}} class represents the view of the main character of the game.  
+
+
+
+
+{\ttfamily \#include $<$pacman.\+h$>$}
+
+
+
+Inheritance diagram for Pacman\+:
+% FIG 0
+
+
+Collaboration diagram for Pacman\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPacman_ae78323bec47da559a46420901429cc2c}\label{classPacman_ae78323bec47da559a46420901429cc2c}} 
+void \mbox{\hyperlink{classPacman_ae78323bec47da559a46420901429cc2c}{move}} ()
+\begin{DoxyCompactList}\small\item\em Moves the \mbox{\hyperlink{classPacman}{Pacman}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPacman_ab9c49818d3ef5c45a2aa49532bf08e3a}{Pacman}} (Maze\+Object $\ast$pacman, Maze $\ast$maze, QTimer $\ast$main\+Timer, QGraphics\+Scene $\ast$end\+Scene, QMain\+Window $\ast$end\+Window, QGraphics\+Item $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classPacman}{Pacman}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPacman_a1ad1129ee5ac67c1094f06700a455b50}\label{classPacman_a1ad1129ee5ac67c1094f06700a455b50}} 
+QRectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{classPacman_ac928bea1f2e775f5559c392468de8737}\label{classPacman_ac928bea1f2e775f5559c392468de8737}} 
+void {\bfseries paint} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$, QWidget $\ast$) override
+\item 
+void \mbox{\hyperlink{classPacman_ac6ff3a5a32346942e4cb91a99ae192c3}{key\+Press\+Event}} (QKey\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em Handles key press events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPacman_a8c46b6adab695947adccd568b38b2698}\label{classPacman_a8c46b6adab695947adccd568b38b2698}} 
+Maze\+Object $\ast$ {\bfseries pacman\+Move}
+\item 
+\mbox{\Hypertarget{classPacman_a6a13a76e0a0c2604523c0d875e7bf1cc}\label{classPacman_a6a13a76e0a0c2604523c0d875e7bf1cc}} 
+Maze $\ast$ {\bfseries m\+\_\+maze}
+\item 
+\mbox{\Hypertarget{classPacman_af057bf005f031211be1d7610c76e3570}\label{classPacman_af057bf005f031211be1d7610c76e3570}} 
+QTimer $\ast$ {\bfseries m\+\_\+timer}
+\item 
+\mbox{\Hypertarget{classPacman_aa24e591477e223f25d60e3b42b474176}\label{classPacman_aa24e591477e223f25d60e3b42b474176}} 
+QGraphics\+Scene $\ast$ {\bfseries m\+\_\+end\+Scene}
+\item 
+\mbox{\Hypertarget{classPacman_a15b91f621ffcdd799b6dfda1a41391c6}\label{classPacman_a15b91f621ffcdd799b6dfda1a41391c6}} 
+QMain\+Window $\ast$ {\bfseries m\+\_\+end\+Window}
+\item 
+\mbox{\Hypertarget{classPacman_a45371f263d8b0ae607b2efdc379506e8}\label{classPacman_a45371f263d8b0ae607b2efdc379506e8}} 
+QLabel $\ast$ {\bfseries end\+Label\+Loose}
+\item 
+\mbox{\Hypertarget{classPacman_a7262a3a03e8cdd003694a0ce1a396488}\label{classPacman_a7262a3a03e8cdd003694a0ce1a396488}} 
+QLabel $\ast$ {\bfseries end\+Label\+Win}
+\item 
+\mbox{\Hypertarget{classPacman_a28ebb6c49ab4e9470db04a6804d219d3}\label{classPacman_a28ebb6c49ab4e9470db04a6804d219d3}} 
+QWidget $\ast$ {\bfseries m\+\_\+parent\+Widget}
+\item 
+\mbox{\Hypertarget{classPacman_a8daaa08d97adc78fee2169d9133d7031}\label{classPacman_a8daaa08d97adc78fee2169d9133d7031}} 
+int {\bfseries quit\+Next} = 0
+\item 
+\mbox{\Hypertarget{classPacman_aad6e7623d1f8ecb28782466db97aa270}\label{classPacman_aad6e7623d1f8ecb28782466db97aa270}} 
+int {\bfseries rows} = 0
+\item 
+\mbox{\Hypertarget{classPacman_aab56f39a3063e1d254f03851e41fed56}\label{classPacman_aab56f39a3063e1d254f03851e41fed56}} 
+int {\bfseries cols} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classPacman}{Pacman}} class represents the view of the main character of the game. 
+
+This class inherits from QObject and QGraphics\+Item. It contains handling key events that correspond to movement. It also contains references to other game objects, such as the maze and the end scene. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPacman_ab9c49818d3ef5c45a2aa49532bf08e3a}\label{classPacman_ab9c49818d3ef5c45a2aa49532bf08e3a}} 
+\index{Pacman@{Pacman}!Pacman@{Pacman}}
+\index{Pacman@{Pacman}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{Pacman()}{Pacman()}}
+{\footnotesize\ttfamily Pacman\+::\+Pacman (\begin{DoxyParamCaption}\item[{Maze\+Object $\ast$}]{pacman,  }\item[{Maze $\ast$}]{maze,  }\item[{QTimer $\ast$}]{main\+Timer,  }\item[{QGraphics\+Scene $\ast$}]{end\+Scene,  }\item[{QMain\+Window $\ast$}]{end\+Window,  }\item[{QGraphics\+Item $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classPacman}{Pacman}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pacman} & The \mbox{\hyperlink{classPacman}{Pacman}}\textquotesingle{}s Maze\+Object. \\
+\hline
+{\em maze} & The game maze. \\
+\hline
+{\em main\+Timer} & The main game timer. \\
+\hline
+{\em end\+Scene} & The game over scene. \\
+\hline
+{\em end\+Window} & The game over window. \\
+\hline
+{\em parent} & The parent object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPacman_ac6ff3a5a32346942e4cb91a99ae192c3}\label{classPacman_ac6ff3a5a32346942e4cb91a99ae192c3}} 
+\index{Pacman@{Pacman}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!Pacman@{Pacman}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Pacman\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Handles key press events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & The key event. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{pacman_8h}{pacman.\+h}}\item 
+pacman.\+cpp\end{DoxyCompactItemize}

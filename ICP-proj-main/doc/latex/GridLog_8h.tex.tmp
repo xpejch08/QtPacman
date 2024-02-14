@@ -1,0 +1,24 @@
+\hypertarget{GridLog_8h}{}\doxysection{Grid\+Log.\+h File Reference}
+\label{GridLog_8h}\index{GridLog.h@{GridLog.h}}
+
+
+Header file for the \mbox{\hyperlink{classGridLog}{Grid\+Log}} class, which represents the game board log in a Pac-\/\+Man game.  
+
+
+{\ttfamily \#include $<$QGraphics\+Item$>$}\newline
+{\ttfamily \#include $<$headers/\+Maze\+Object.\+hpp$>$}\newline
+Include dependency graph for Grid\+Log.\+h\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classGridLog}{Grid\+Log}}
+\begin{DoxyCompactList}\small\item\em Represents the game board log in a Pac-\/\+Man game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the \mbox{\hyperlink{classGridLog}{Grid\+Log}} class, which represents the game board log in a Pac-\/\+Man game. 
+
+\begin{DoxyAuthor}{Author}
+xpejch08 Štěpán Pejchar 
+\end{DoxyAuthor}

@@ -1,0 +1,222 @@
+\hypertarget{classMazeButton}{}\doxysection{Maze\+Button Class Reference}
+\label{classMazeButton}\index{MazeButton@{MazeButton}}
+
+
+This class represents a button for controlling logs.  
+
+
+
+
+{\ttfamily \#include $<$Maze\+Button.\+h$>$}
+
+
+
+Inheritance diagram for Maze\+Button\+:
+% FIG 0
+
+
+Collaboration diagram for Maze\+Button\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMazeButton_a633c3aba3292790c486de28093e1e222}\label{classMazeButton_a633c3aba3292790c486de28093e1e222}} 
+void \mbox{\hyperlink{classMazeButton_a633c3aba3292790c486de28093e1e222}{button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Handles the button clicked logging forwards signal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMazeButton_a0d4c097fae8ffe5e1349d6314b6c4f18}\label{classMazeButton_a0d4c097fae8ffe5e1349d6314b6c4f18}} 
+void \mbox{\hyperlink{classMazeButton_a0d4c097fae8ffe5e1349d6314b6c4f18}{backwards\+Button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Handles the logging backwards button clicked signal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMazeButton_a3412a493a4f00be83999f82173e96821}\label{classMazeButton_a3412a493a4f00be83999f82173e96821}} 
+void \mbox{\hyperlink{classMazeButton_a3412a493a4f00be83999f82173e96821}{play\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Plays the log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classMazeButton_a93873343f1de64b95f439abad1960a7a}{get\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Gets the status of the button. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMazeButton_a3993bbdac0e6473ceea37d1cf9e63b03}{Maze\+Button}} (QGraphics\+Scene $\ast$scene, QGraphics\+Scene $\ast$\mbox{\hyperlink{classMazeButton_a008729623daee04e287ec7df95a382b7}{log\+Scene}}, int x\+Pos, int y\+Pos, QMain\+Window $\ast$w, QMain\+Window $\ast$new\+Window, \mbox{\hyperlink{classLog}{Log}} $\ast$log)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classMazeButton}{Maze\+Button}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMazeButton_aab5d32fb1980da68ffa57a27e8dc985c}\label{classMazeButton_aab5d32fb1980da68ffa57a27e8dc985c}} 
+void \mbox{\hyperlink{classMazeButton_aab5d32fb1980da68ffa57a27e8dc985c}{start\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Starts the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classMazeButton_ac388839bfd5a85f5ff31a6dba24d7ab8}{log\+Forward\+Button}}
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classMazeButton_a2b5e2b46bf6ae74d0adff9fa53c2b71a}{log\+Backwards\+Button}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{classMazeButton_a10a95b3602a27cef54bb7d6aff0fb076}{main\+Scene}}
+\item 
+QGraphics\+View $\ast$ \mbox{\hyperlink{classMazeButton_a41f8fae57d0375f9ee547fee40493364}{main\+View}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{classMazeButton_a008729623daee04e287ec7df95a382b7}{log\+Scene}}
+\item 
+QGraphics\+View $\ast$ \mbox{\hyperlink{classMazeButton_adc765a9d5b0e836b647e5ea1618109c5}{game\+View}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{classMazeButton_ac9a26f8a3f48429cc7234db518d6876a}{slot\+Timer}}
+\item 
+QMain\+Window $\ast$ \mbox{\hyperlink{classMazeButton_a7a46905fd5c37aad664de12c44bf1c88}{window\+Maze}}
+\item 
+QMain\+Window $\ast$ \mbox{\hyperlink{classMazeButton_ad96881567e56f03b09d3807c8e9b6097}{window\+Log}}
+\item 
+QTimer \mbox{\hyperlink{classMazeButton_adba47e9c39bdcacd28fb8ced7cb321e7}{m\+\_\+timer}}
+\item 
+\mbox{\hyperlink{classLog}{Log}} $\ast$ \mbox{\hyperlink{classMazeButton_acdfc7e0b3258ddd53a67ad3fdaa1e281}{m\+\_\+log}}
+\item 
+bool \mbox{\hyperlink{classMazeButton_a5ebe00838bd39039e51f36fb520a0432}{forward\+Log}} = true
+\item 
+int \mbox{\hyperlink{classMazeButton_a9169b79e8683f4735ea3ddc5250f400d}{positionx}}
+\item 
+int \mbox{\hyperlink{classMazeButton_a0e50aad46ad5b39dbebdd5b36add39dc}{positiony}}
+\item 
+bool \mbox{\hyperlink{classMazeButton_a9d4985ca1cbbab99699851e49e65a8de}{is\+Pressed}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a button for controlling logs. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMazeButton_a3993bbdac0e6473ceea37d1cf9e63b03}\label{classMazeButton_a3993bbdac0e6473ceea37d1cf9e63b03}} 
+\index{MazeButton@{MazeButton}!MazeButton@{MazeButton}}
+\index{MazeButton@{MazeButton}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{MazeButton()}{MazeButton()}}
+{\footnotesize\ttfamily Maze\+Button\+::\+Maze\+Button (\begin{DoxyParamCaption}\item[{QGraphics\+Scene $\ast$}]{scene,  }\item[{QGraphics\+Scene $\ast$}]{log\+Scene,  }\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos,  }\item[{QMain\+Window $\ast$}]{w,  }\item[{QMain\+Window $\ast$}]{new\+Window,  }\item[{\mbox{\hyperlink{classLog}{Log}} $\ast$}]{log }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classMazeButton}{Maze\+Button}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & The main scene. \\
+\hline
+{\em log\+Scene} & The log scene. \\
+\hline
+{\em x\+Pos} & The x position. \\
+\hline
+{\em y\+Pos} & The y position. \\
+\hline
+{\em w} & The main window for the maze game. \\
+\hline
+{\em new\+Window} & The main window for the log. \\
+\hline
+{\em log} & The log object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMazeButton_a93873343f1de64b95f439abad1960a7a}\label{classMazeButton_a93873343f1de64b95f439abad1960a7a}} 
+\index{MazeButton@{MazeButton}!getPressed@{getPressed}}
+\index{getPressed@{getPressed}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{getPressed()}{getPressed()}}
+{\footnotesize\ttfamily bool Maze\+Button\+::get\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the status of the button. 
+
+\begin{DoxyReturn}{Returns}
+A boolean indicating whether the button is pressed or not. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classMazeButton_a5ebe00838bd39039e51f36fb520a0432}\label{classMazeButton_a5ebe00838bd39039e51f36fb520a0432}} 
+\index{MazeButton@{MazeButton}!forwardLog@{forwardLog}}
+\index{forwardLog@{forwardLog}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{forwardLog}{forwardLog}}
+{\footnotesize\ttfamily bool Maze\+Button\+::forward\+Log = true}
+
+A boolean indicating whether the log is moving forward or backwards \mbox{\Hypertarget{classMazeButton_adc765a9d5b0e836b647e5ea1618109c5}\label{classMazeButton_adc765a9d5b0e836b647e5ea1618109c5}} 
+\index{MazeButton@{MazeButton}!gameView@{gameView}}
+\index{gameView@{gameView}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{gameView}{gameView}}
+{\footnotesize\ttfamily QGraphics\+View$\ast$ Maze\+Button\+::game\+View}
+
+The game view. \mbox{\Hypertarget{classMazeButton_a9d4985ca1cbbab99699851e49e65a8de}\label{classMazeButton_a9d4985ca1cbbab99699851e49e65a8de}} 
+\index{MazeButton@{MazeButton}!isPressed@{isPressed}}
+\index{isPressed@{isPressed}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{isPressed}{isPressed}}
+{\footnotesize\ttfamily bool Maze\+Button\+::is\+Pressed = false}
+
+A boolean indicating whether the button is pressed or not. \mbox{\Hypertarget{classMazeButton_a2b5e2b46bf6ae74d0adff9fa53c2b71a}\label{classMazeButton_a2b5e2b46bf6ae74d0adff9fa53c2b71a}} 
+\index{MazeButton@{MazeButton}!logBackwardsButton@{logBackwardsButton}}
+\index{logBackwardsButton@{logBackwardsButton}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{logBackwardsButton}{logBackwardsButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Maze\+Button\+::log\+Backwards\+Button}
+
+The button to move the log backwards. \mbox{\Hypertarget{classMazeButton_ac388839bfd5a85f5ff31a6dba24d7ab8}\label{classMazeButton_ac388839bfd5a85f5ff31a6dba24d7ab8}} 
+\index{MazeButton@{MazeButton}!logForwardButton@{logForwardButton}}
+\index{logForwardButton@{logForwardButton}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{logForwardButton}{logForwardButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ Maze\+Button\+::log\+Forward\+Button}
+
+The button to move the log forward. \mbox{\Hypertarget{classMazeButton_a008729623daee04e287ec7df95a382b7}\label{classMazeButton_a008729623daee04e287ec7df95a382b7}} 
+\index{MazeButton@{MazeButton}!logScene@{logScene}}
+\index{logScene@{logScene}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{logScene}{logScene}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ Maze\+Button\+::log\+Scene}
+
+The log scene. \mbox{\Hypertarget{classMazeButton_acdfc7e0b3258ddd53a67ad3fdaa1e281}\label{classMazeButton_acdfc7e0b3258ddd53a67ad3fdaa1e281}} 
+\index{MazeButton@{MazeButton}!m\_log@{m\_log}}
+\index{m\_log@{m\_log}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{m\_log}{m\_log}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLog}{Log}}$\ast$ Maze\+Button\+::m\+\_\+log}
+
+The log object. \mbox{\Hypertarget{classMazeButton_adba47e9c39bdcacd28fb8ced7cb321e7}\label{classMazeButton_adba47e9c39bdcacd28fb8ced7cb321e7}} 
+\index{MazeButton@{MazeButton}!m\_timer@{m\_timer}}
+\index{m\_timer@{m\_timer}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{m\_timer}{m\_timer}}
+{\footnotesize\ttfamily QTimer Maze\+Button\+::m\+\_\+timer}
+
+The timer for the game. \mbox{\Hypertarget{classMazeButton_a10a95b3602a27cef54bb7d6aff0fb076}\label{classMazeButton_a10a95b3602a27cef54bb7d6aff0fb076}} 
+\index{MazeButton@{MazeButton}!mainScene@{mainScene}}
+\index{mainScene@{mainScene}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{mainScene}{mainScene}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ Maze\+Button\+::main\+Scene}
+
+The main scene. \mbox{\Hypertarget{classMazeButton_a41f8fae57d0375f9ee547fee40493364}\label{classMazeButton_a41f8fae57d0375f9ee547fee40493364}} 
+\index{MazeButton@{MazeButton}!mainView@{mainView}}
+\index{mainView@{mainView}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{mainView}{mainView}}
+{\footnotesize\ttfamily QGraphics\+View$\ast$ Maze\+Button\+::main\+View}
+
+The main view. \mbox{\Hypertarget{classMazeButton_a9169b79e8683f4735ea3ddc5250f400d}\label{classMazeButton_a9169b79e8683f4735ea3ddc5250f400d}} 
+\index{MazeButton@{MazeButton}!positionx@{positionx}}
+\index{positionx@{positionx}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{positionx}{positionx}}
+{\footnotesize\ttfamily int Maze\+Button\+::positionx}
+
+The x position. \mbox{\Hypertarget{classMazeButton_a0e50aad46ad5b39dbebdd5b36add39dc}\label{classMazeButton_a0e50aad46ad5b39dbebdd5b36add39dc}} 
+\index{MazeButton@{MazeButton}!positiony@{positiony}}
+\index{positiony@{positiony}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{positiony}{positiony}}
+{\footnotesize\ttfamily int Maze\+Button\+::positiony}
+
+The y position. \mbox{\Hypertarget{classMazeButton_ac9a26f8a3f48429cc7234db518d6876a}\label{classMazeButton_ac9a26f8a3f48429cc7234db518d6876a}} 
+\index{MazeButton@{MazeButton}!slotTimer@{slotTimer}}
+\index{slotTimer@{slotTimer}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{slotTimer}{slotTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ Maze\+Button\+::slot\+Timer}
+
+The timer for the slots. \mbox{\Hypertarget{classMazeButton_ad96881567e56f03b09d3807c8e9b6097}\label{classMazeButton_ad96881567e56f03b09d3807c8e9b6097}} 
+\index{MazeButton@{MazeButton}!windowLog@{windowLog}}
+\index{windowLog@{windowLog}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{windowLog}{windowLog}}
+{\footnotesize\ttfamily QMain\+Window$\ast$ Maze\+Button\+::window\+Log}
+
+The main window for the log. \mbox{\Hypertarget{classMazeButton_a7a46905fd5c37aad664de12c44bf1c88}\label{classMazeButton_a7a46905fd5c37aad664de12c44bf1c88}} 
+\index{MazeButton@{MazeButton}!windowMaze@{windowMaze}}
+\index{windowMaze@{windowMaze}!MazeButton@{MazeButton}}
+\doxysubsubsection{\texorpdfstring{windowMaze}{windowMaze}}
+{\footnotesize\ttfamily QMain\+Window$\ast$ Maze\+Button\+::window\+Maze}
+
+The main window for the maze game. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{MazeButton_8h}{Maze\+Button.\+h}}\item 
+Maze\+Button.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classGrid}{}\doxysection{Grid Class Reference}
+\label{classGrid}\index{Grid@{Grid}}
+
+
+Represents the game board in a Pac-\/\+Man game.  
+
+
+
+
+{\ttfamily \#include $<$grid.\+h$>$}
+
+
+
+Inheritance diagram for Grid\+:
+% FIG 0
+
+
+Collaboration diagram for Grid\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGrid_a736dab61040408ad186363228499f24f}{Grid}} (Maze $\ast$maze, QGraphics\+Item $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classGrid}{Grid}} object with the given parameters. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGrid_acd62345c5a224d2d4a87e3b6e3b04941}\label{classGrid_acd62345c5a224d2d4a87e3b6e3b04941}} 
+QRectF {\bfseries bounding\+Rect} () const override
+\item 
+\mbox{\Hypertarget{classGrid_a3733b623e50400e4475ee34a48eca82e}\label{classGrid_a3733b623e50400e4475ee34a48eca82e}} 
+void {\bfseries paint} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget) override
+\item 
+void \mbox{\hyperlink{classGrid_a95e28a244508b3be07b638207432aea1}{paint\+Log}} (QPainter $\ast$painter, const QStyle\+Option\+Graphics\+Item $\ast$option, QWidget $\ast$widget)
+\begin{DoxyCompactList}\small\item\em Paints the log messages on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Maze $\ast$ \mbox{\hyperlink{classGrid_a8a858d7799f3489f8f3e89c1b1b2f022}{maze\+Grid}}
+\item 
+int \mbox{\hyperlink{classGrid_a6f79f2e87557be68e606ea5046b2c5f7}{rows}}
+\item 
+int \mbox{\hyperlink{classGrid_add88adc7b2e7ff3c6867f6ebca42e260}{cols}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the game board in a Pac-\/\+Man game. 
+
+The \mbox{\hyperlink{classGrid}{Grid}} class is a QGraphics\+Item that represents the game board in a Pac-\/\+Man game. It is responsible for drawing the maze and the player and ghost characters on the screen. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGrid_a736dab61040408ad186363228499f24f}\label{classGrid_a736dab61040408ad186363228499f24f}} 
+\index{Grid@{Grid}!Grid@{Grid}}
+\index{Grid@{Grid}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily Grid\+::\+Grid (\begin{DoxyParamCaption}\item[{Maze $\ast$}]{maze,  }\item[{QGraphics\+Item $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classGrid}{Grid}} object with the given parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em maze} & A pointer to the Maze object that represents the game board. \\
+\hline
+{\em parent} & An optional parent QGraphics\+Item. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGrid_a95e28a244508b3be07b638207432aea1}\label{classGrid_a95e28a244508b3be07b638207432aea1}} 
+\index{Grid@{Grid}!paintLog@{paintLog}}
+\index{paintLog@{paintLog}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{paintLog()}{paintLog()}}
+{\footnotesize\ttfamily void Grid\+::paint\+Log (\begin{DoxyParamCaption}\item[{QPainter $\ast$}]{painter,  }\item[{const QStyle\+Option\+Graphics\+Item $\ast$}]{option,  }\item[{QWidget $\ast$}]{widget }\end{DoxyParamCaption})}
+
+
+
+Paints the log messages on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em painter} & A QPainter object used for painting. \\
+\hline
+{\em option} & A QStyle\+Option\+Graphics\+Item object. \\
+\hline
+{\em widget} & A QWidget object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classGrid_add88adc7b2e7ff3c6867f6ebca42e260}\label{classGrid_add88adc7b2e7ff3c6867f6ebca42e260}} 
+\index{Grid@{Grid}!cols@{cols}}
+\index{cols@{cols}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int Grid\+::cols}
+
+The number of columns in the game board. \mbox{\Hypertarget{classGrid_a8a858d7799f3489f8f3e89c1b1b2f022}\label{classGrid_a8a858d7799f3489f8f3e89c1b1b2f022}} 
+\index{Grid@{Grid}!mazeGrid@{mazeGrid}}
+\index{mazeGrid@{mazeGrid}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{mazeGrid}{mazeGrid}}
+{\footnotesize\ttfamily Maze$\ast$ Grid\+::maze\+Grid}
+
+A pointer to the Maze object that represents the game board. \mbox{\Hypertarget{classGrid_a6f79f2e87557be68e606ea5046b2c5f7}\label{classGrid_a6f79f2e87557be68e606ea5046b2c5f7}} 
+\index{Grid@{Grid}!rows@{rows}}
+\index{rows@{rows}!Grid@{Grid}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int Grid\+::rows}
+
+The number of rows in the game board. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+grid.\+h\item 
+grid.\+cpp\end{DoxyCompactItemize}

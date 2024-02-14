@@ -1,0 +1,226 @@
+\hypertarget{classmainMenu}{}\doxysection{main\+Menu Class Reference}
+\label{classmainMenu}\index{mainMenu@{mainMenu}}
+
+
+This class represents the main menu of the Pac-\/\+Man game.  
+
+
+
+
+{\ttfamily \#include $<$main\+Menu.\+h$>$}
+
+
+
+Inheritance diagram for main\+Menu\+:
+% FIG 0
+
+
+Collaboration diagram for main\+Menu\+:
+% FIG 1
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmainMenu_a55a2557351f7ef542be9ffcb42923664}\label{classmainMenu_a55a2557351f7ef542be9ffcb42923664}} 
+void \mbox{\hyperlink{classmainMenu_a55a2557351f7ef542be9ffcb42923664}{button\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em A slot for handling the start button click event. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainMenu_ae39edc63c3599ff7d1ec074bfc8b6cf2}\label{classmainMenu_ae39edc63c3599ff7d1ec074bfc8b6cf2}} 
+void \mbox{\hyperlink{classmainMenu_ae39edc63c3599ff7d1ec074bfc8b6cf2}{interactives\+Update}} ()
+\begin{DoxyCompactList}\small\item\em A slot for updating the scene labels . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classmainMenu_a4fdfdbd511f7e6331330427468ae9dc3}{get\+Pressed}} ()
+\item 
+\mbox{\hyperlink{classmainMenu_a102ce2138ad5d74adbd4ea6fb3973802}{main\+Menu}} (QGraphics\+Scene $\ast$scene, QTimer $\ast$timer, int x\+Pos, int y\+Pos, Maze\+Object $\ast$pacman)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classmainMenu}{main\+Menu}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmainMenu_aaa5c8dbf09ebe62bc153070bb9377479}\label{classmainMenu_aaa5c8dbf09ebe62bc153070bb9377479}} 
+void \mbox{\hyperlink{classmainMenu_aaa5c8dbf09ebe62bc153070bb9377479}{start\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classmainMenu_aef184ea36e17534e28e2e92ad3d8ce4b}{clicked\+Once}} = false
+\item 
+QPush\+Button $\ast$ \mbox{\hyperlink{classmainMenu_a91b400c7acf2edbb196aa943f4ae1166}{start\+Game\+Button}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{classmainMenu_a172b34e7d4004670b4446d84d4a3ac6b}{main\+Scene}}
+\item 
+QGraphics\+View $\ast$ \mbox{\hyperlink{classmainMenu_a7b6bf718f95adc21debf51b81f02b48e}{main\+View}}
+\item 
+QGraphics\+Scene $\ast$ \mbox{\hyperlink{classmainMenu_a0e48e6bb171c748905383d2fdf00fad3}{game\+Scene}}
+\item 
+QGraphics\+View $\ast$ \mbox{\hyperlink{classmainMenu_a3f7e9223ce589fe9bd1e222c1389820b}{game\+View}}
+\item 
+QTimer $\ast$ \mbox{\hyperlink{classmainMenu_a7ed577acaad43d3dd1f6ec7d008b6de2}{slot\+Timer}}
+\item 
+\mbox{\hyperlink{classLog}{Log}} $\ast$ \mbox{\hyperlink{classmainMenu_a65db16fbcd4d896c5f1fda54d5e556a6}{m\+\_\+log}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classmainMenu_a5a95ef3357b413957be6dc26a255dbc7}{lives\+Label}}
+\item 
+QLabel $\ast$ \mbox{\hyperlink{classmainMenu_ae9345671060fe6bcf8b57e1eb0b19abb}{steps\+Label}}
+\item 
+Maze\+Object $\ast$ \mbox{\hyperlink{classmainMenu_a40e6ca331b13fa77200730b08b17aa7c}{pacman\+For\+Lives}}
+\item 
+QGraphics\+Proxy\+Widget $\ast$ \mbox{\hyperlink{classmainMenu_ac1c9e00111c05d3042f438ed7daad690}{proxy\+Widget}}
+\item 
+int \mbox{\hyperlink{classmainMenu_a4d2c1ed6f5a130bb2e196d2a8352ff99}{current\+Lives}}
+\item 
+int \mbox{\hyperlink{classmainMenu_a707143035b88ad631dd75b19ed7c6db1}{previous\+Lives}} = 3
+\item 
+int \mbox{\hyperlink{classmainMenu_af11757704e0a7ab6ae8dd905f937fe66}{positionx}}
+\item 
+int \mbox{\hyperlink{classmainMenu_afb49d7a5619b853107ee1e9db8649877}{positiony}}
+\item 
+bool \mbox{\hyperlink{classmainMenu_acd5b2788c64e76d00e6b66a7d079a649}{is\+Pressed}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents the main menu of the Pac-\/\+Man game. 
+
+The main menu displays the start button and the current number of lives and steps taken by the player. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmainMenu_a102ce2138ad5d74adbd4ea6fb3973802}\label{classmainMenu_a102ce2138ad5d74adbd4ea6fb3973802}} 
+\index{mainMenu@{mainMenu}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{mainMenu()}{mainMenu()}}
+{\footnotesize\ttfamily main\+Menu\+::main\+Menu (\begin{DoxyParamCaption}\item[{QGraphics\+Scene $\ast$}]{scene,  }\item[{QTimer $\ast$}]{timer,  }\item[{int}]{x\+Pos,  }\item[{int}]{y\+Pos,  }\item[{Maze\+Object $\ast$}]{pacman }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classmainMenu}{main\+Menu}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & A pointer to a QGraphics\+Scene representing the main menu scene. \\
+\hline
+{\em timer} & A pointer to a QTimer for updating the scene. \\
+\hline
+{\em x\+Pos} & An integer representing the x-\/coordinate of the main menu. \\
+\hline
+{\em y\+Pos} & An integer representing the y-\/coordinate of the main menu. \\
+\hline
+{\em pacman} & A pointer to a Maze\+Object representing the Pac-\/\+Man object. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmainMenu_a4fdfdbd511f7e6331330427468ae9dc3}\label{classmainMenu_a4fdfdbd511f7e6331330427468ae9dc3}} 
+\index{mainMenu@{mainMenu}!getPressed@{getPressed}}
+\index{getPressed@{getPressed}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{getPressed()}{getPressed()}}
+{\footnotesize\ttfamily bool main\+Menu\+::get\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if the start button has been pressed. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmainMenu_aef184ea36e17534e28e2e92ad3d8ce4b}\label{classmainMenu_aef184ea36e17534e28e2e92ad3d8ce4b}} 
+\index{mainMenu@{mainMenu}!clickedOnce@{clickedOnce}}
+\index{clickedOnce@{clickedOnce}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{clickedOnce}{clickedOnce}}
+{\footnotesize\ttfamily bool main\+Menu\+::clicked\+Once = false}
+
+A boolean flag indicating if the start button has been clicked. \mbox{\Hypertarget{classmainMenu_a4d2c1ed6f5a130bb2e196d2a8352ff99}\label{classmainMenu_a4d2c1ed6f5a130bb2e196d2a8352ff99}} 
+\index{mainMenu@{mainMenu}!currentLives@{currentLives}}
+\index{currentLives@{currentLives}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{currentLives}{currentLives}}
+{\footnotesize\ttfamily int main\+Menu\+::current\+Lives}
+
+An integer representing the current number of lives. \mbox{\Hypertarget{classmainMenu_a0e48e6bb171c748905383d2fdf00fad3}\label{classmainMenu_a0e48e6bb171c748905383d2fdf00fad3}} 
+\index{mainMenu@{mainMenu}!gameScene@{gameScene}}
+\index{gameScene@{gameScene}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{gameScene}{gameScene}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ main\+Menu\+::game\+Scene}
+
+A QGraphics\+Scene representing the game scene. \mbox{\Hypertarget{classmainMenu_a3f7e9223ce589fe9bd1e222c1389820b}\label{classmainMenu_a3f7e9223ce589fe9bd1e222c1389820b}} 
+\index{mainMenu@{mainMenu}!gameView@{gameView}}
+\index{gameView@{gameView}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{gameView}{gameView}}
+{\footnotesize\ttfamily QGraphics\+View$\ast$ main\+Menu\+::game\+View}
+
+A QGraphics\+View representing the game view. \mbox{\Hypertarget{classmainMenu_acd5b2788c64e76d00e6b66a7d079a649}\label{classmainMenu_acd5b2788c64e76d00e6b66a7d079a649}} 
+\index{mainMenu@{mainMenu}!isPressed@{isPressed}}
+\index{isPressed@{isPressed}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{isPressed}{isPressed}}
+{\footnotesize\ttfamily bool main\+Menu\+::is\+Pressed = false}
+
+A boolean flag indicating if the start button has been pressed. \mbox{\Hypertarget{classmainMenu_a5a95ef3357b413957be6dc26a255dbc7}\label{classmainMenu_a5a95ef3357b413957be6dc26a255dbc7}} 
+\index{mainMenu@{mainMenu}!livesLabel@{livesLabel}}
+\index{livesLabel@{livesLabel}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{livesLabel}{livesLabel}}
+{\footnotesize\ttfamily QLabel$\ast$ main\+Menu\+::lives\+Label}
+
+A QLabel for displaying the current number of lives. \mbox{\Hypertarget{classmainMenu_a65db16fbcd4d896c5f1fda54d5e556a6}\label{classmainMenu_a65db16fbcd4d896c5f1fda54d5e556a6}} 
+\index{mainMenu@{mainMenu}!m\_log@{m\_log}}
+\index{m\_log@{m\_log}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{m\_log}{m\_log}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classLog}{Log}}$\ast$ main\+Menu\+::m\+\_\+log}
+
+A pointer to a \mbox{\hyperlink{classLog}{Log}} object for logging game events. \mbox{\Hypertarget{classmainMenu_a172b34e7d4004670b4446d84d4a3ac6b}\label{classmainMenu_a172b34e7d4004670b4446d84d4a3ac6b}} 
+\index{mainMenu@{mainMenu}!mainScene@{mainScene}}
+\index{mainScene@{mainScene}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{mainScene}{mainScene}}
+{\footnotesize\ttfamily QGraphics\+Scene$\ast$ main\+Menu\+::main\+Scene}
+
+A QGraphics\+Scene representing the main menu scene. \mbox{\Hypertarget{classmainMenu_a7b6bf718f95adc21debf51b81f02b48e}\label{classmainMenu_a7b6bf718f95adc21debf51b81f02b48e}} 
+\index{mainMenu@{mainMenu}!mainView@{mainView}}
+\index{mainView@{mainView}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{mainView}{mainView}}
+{\footnotesize\ttfamily QGraphics\+View$\ast$ main\+Menu\+::main\+View}
+
+A QGraphics\+View representing the main menu view. \mbox{\Hypertarget{classmainMenu_a40e6ca331b13fa77200730b08b17aa7c}\label{classmainMenu_a40e6ca331b13fa77200730b08b17aa7c}} 
+\index{mainMenu@{mainMenu}!pacmanForLives@{pacmanForLives}}
+\index{pacmanForLives@{pacmanForLives}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{pacmanForLives}{pacmanForLives}}
+{\footnotesize\ttfamily Maze\+Object$\ast$ main\+Menu\+::pacman\+For\+Lives}
+
+A pointer to a Maze\+Object representing the Pac-\/\+Man object \mbox{\Hypertarget{classmainMenu_af11757704e0a7ab6ae8dd905f937fe66}\label{classmainMenu_af11757704e0a7ab6ae8dd905f937fe66}} 
+\index{mainMenu@{mainMenu}!positionx@{positionx}}
+\index{positionx@{positionx}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{positionx}{positionx}}
+{\footnotesize\ttfamily int main\+Menu\+::positionx}
+
+An integer representing the x-\/coordinate of the main menu. \mbox{\Hypertarget{classmainMenu_afb49d7a5619b853107ee1e9db8649877}\label{classmainMenu_afb49d7a5619b853107ee1e9db8649877}} 
+\index{mainMenu@{mainMenu}!positiony@{positiony}}
+\index{positiony@{positiony}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{positiony}{positiony}}
+{\footnotesize\ttfamily int main\+Menu\+::positiony}
+
+An integer representing the y-\/coordinate of the main menu. \mbox{\Hypertarget{classmainMenu_a707143035b88ad631dd75b19ed7c6db1}\label{classmainMenu_a707143035b88ad631dd75b19ed7c6db1}} 
+\index{mainMenu@{mainMenu}!previousLives@{previousLives}}
+\index{previousLives@{previousLives}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{previousLives}{previousLives}}
+{\footnotesize\ttfamily int main\+Menu\+::previous\+Lives = 3}
+
+An integer representing the previous number of lives starting with 3. \mbox{\Hypertarget{classmainMenu_ac1c9e00111c05d3042f438ed7daad690}\label{classmainMenu_ac1c9e00111c05d3042f438ed7daad690}} 
+\index{mainMenu@{mainMenu}!proxyWidget@{proxyWidget}}
+\index{proxyWidget@{proxyWidget}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{proxyWidget}{proxyWidget}}
+{\footnotesize\ttfamily QGraphics\+Proxy\+Widget$\ast$ main\+Menu\+::proxy\+Widget}
+
+A pointer to a QGraphics\+Proxy\+Widget for displaying the current number of steps taken. \mbox{\Hypertarget{classmainMenu_a7ed577acaad43d3dd1f6ec7d008b6de2}\label{classmainMenu_a7ed577acaad43d3dd1f6ec7d008b6de2}} 
+\index{mainMenu@{mainMenu}!slotTimer@{slotTimer}}
+\index{slotTimer@{slotTimer}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{slotTimer}{slotTimer}}
+{\footnotesize\ttfamily QTimer$\ast$ main\+Menu\+::slot\+Timer}
+
+A QTimer for updating the scene. \mbox{\Hypertarget{classmainMenu_a91b400c7acf2edbb196aa943f4ae1166}\label{classmainMenu_a91b400c7acf2edbb196aa943f4ae1166}} 
+\index{mainMenu@{mainMenu}!startGameButton@{startGameButton}}
+\index{startGameButton@{startGameButton}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{startGameButton}{startGameButton}}
+{\footnotesize\ttfamily QPush\+Button$\ast$ main\+Menu\+::start\+Game\+Button}
+
+A QPush\+Button representing the start button. \mbox{\Hypertarget{classmainMenu_ae9345671060fe6bcf8b57e1eb0b19abb}\label{classmainMenu_ae9345671060fe6bcf8b57e1eb0b19abb}} 
+\index{mainMenu@{mainMenu}!stepsLabel@{stepsLabel}}
+\index{stepsLabel@{stepsLabel}!mainMenu@{mainMenu}}
+\doxysubsubsection{\texorpdfstring{stepsLabel}{stepsLabel}}
+{\footnotesize\ttfamily QLabel$\ast$ main\+Menu\+::steps\+Label}
+
+A QLabel for displaying the current number of steps taken. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainMenu_8h}{main\+Menu.\+h}}\item 
+main\+Menu.\+cpp\end{DoxyCompactItemize}
